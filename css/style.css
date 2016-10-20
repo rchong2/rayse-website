@@ -19,6 +19,75 @@ p {
   color: #26a69a;
 }
 
+.tint {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);    
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.6);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+#menu-item1, #menu-item2, #menu-item3 {
+  border-right: 1px solid rgb(224, 173, 22);
+  padding-right: 20px;
+}
+
+#menu-item1:hover, #menu-item2:hover, #menu-item3:hover, #menu-item4:hover {
+    font-weight:bold;
+    font-size: 20px;
+}
+
+ul#menu li {
+  display:inline;
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+  padding-left: 30px;
+  position:absolute;
+  font-size: 15px;
+  color: white;
+  z-index: 4;
+}
+
+.caption {
+    z-index: 5
+}
+
+ .slider .slides {
+    background-color: transparent;
+    margin: 0;
+    height: 400px;
+    z-index:1;
+    background: rgba(0,0,255, 0.5);
+}
+
+.slider .slides li img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
